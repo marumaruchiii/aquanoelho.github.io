@@ -15,9 +15,30 @@ body {
 
 @media (max-width: 420px) {
 	body {
-		padding-left: 60px;
+		padding-left: 0px;
 	}
-	.nh-about-list{}
+	.site-logo img{padding: 30px;
+		
+	}
+	.nh-about-list{
+		margin: 10px;
+	}
+	.hf_visitBanner{
+		height: 400px;
+	}
+	.nh_cost{
+		background-position: center center;
+	}
+	.nh_bg_ticket1, .nh_bg_ticket2{
+	opacity: 0;
+}
+
+	.nh_info {padding-top: 50px;
+		
+}
+
+	}
+	   
 }
 
 h1,
@@ -30,6 +51,7 @@ h6 {
 	color: #252525;
 	font-weight: 600;
 }
+
 
 h1 {
 	font-size: 70px;
@@ -165,7 +187,6 @@ iframe{
 	color: white;
 }
 .nh_info{
-	margin: 80px 390px;
 	text-align: center;
 	display: grid;
 	grid-template-columns: 1fr 1fr;
@@ -201,18 +222,17 @@ iframe{
 .nh_floormap img{
 	display: inline-block;
 	text-align: center;
-	margin: 50px 400px;
+	margin: auto;
 	padding: 20px;
 	border-radius: 50px;
 	width: 1000px;
 }
 .nh_cost{
 	background: #edf9fb;
-	padding: 50px;
 	background-image: url("../img/cost/cost1.jpg");
 	background-repeat: no-repeat;
+	background-position: center center;
 	height: 500px;
-	margin-left: 400px;
 	}
 .ml_ticket{
 	background: #eef9fb;
@@ -235,7 +255,9 @@ iframe{
 }
 .nh_floor{
 	background: url("../img/about/6.jpg");
+	background-position: center center;
 	height: 1700px;
+	width: 100%;
 	padding-top: 50px;
 }
 .nh_info1{
@@ -249,16 +271,20 @@ iframe{
 .nh_bg_ticket1{
 	background-image: url("../img/cost/bn_ticket_pc.jpg");
 	background-repeat: no-repeat;
+	background-position: center center;
 	margin-top: 60px;
 	margin-left: 350px;
 	height: 140px;
+	width: 100%;
 }
 .nh_bg_ticket2{
 	background-image: url("../img/cost/bn_passport_pc.jpg");
 	background-repeat: no-repeat;
-	margin: 60px 50px;
+	background-position: center center;
+	margin-top: 60px;
+	margin-left: 150px;
 	height: 140px;
-	
+	width: 100%
 }
 
 .nh_ticket2{
@@ -409,7 +435,15 @@ iframe{
 
 @media (max-width: 420px) {
 	.menu-wrapper {
-		width: 60px;
+		width: 90px;
+	}
+	
+	.main-menu ul li a {
+		display: inline-block;
+		text-align: center;
+		margin-top: 20px;
+		font-size: 50px;
+		padding: 30px;
 	}
 }
 
@@ -431,7 +465,6 @@ iframe{
 
 .menu-social-warp {
 	background-color: white;
-	opacity: 95%;
 	height: calc(100% - 90px);
 	display: -webkit-box;
 	display: -ms-flexbox;
@@ -487,6 +520,9 @@ iframe{
 	.side-menu-wrapper {
 		width: 100%;
 		left: -100%;
+	}
+	.menu-social-warp{
+		opacity: 0;	
 	}
 }
 
@@ -727,6 +763,7 @@ only screen and (min-width: 768px) and (max-width: 991px) {
 }
 
 @media (max-width: 420px) {
+
 	.pana-accordion-item .pa-text h2,
 	.hero-item .pa-text h2 {
 		font-size: 24px;
